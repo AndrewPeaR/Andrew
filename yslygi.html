@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- VUE -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+    <!-- Vuetify -->
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@1.x/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <style type="text/css">
+        .header {
+            margin-bottom: 50px;
+        }
+
+        .white-color {
+            color: "#02315E";
+        }
+
+        .layout {
+            height: 100%;
+        }
+
+        body {
+            background-color: #E3F2FD;
+        }
+
+        .v-card-margin {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <v-app>
+            <v-toolbar color="primary">
+                <v-toolbar-title class="white--text">AndrewPear Ind.</v-toolbar-title>
+                <v-spacer></v-spacer>
+                <v-toolbar-items class="hidden-sm-and-down">
+                    <v-btn flat class="white--text" href="#">Главная</v-btn>
+                    <v-btn flat class="white--text" href="#">О нас</v-btn>
+                    <v-btn flat class="white--text" href="#">Отзывы</v-btn>
+                    <v-btn flat class="white--text" href="#">Оставить заявку</v-btn> <!-- Модальное окно -->
+                </v-toolbar-items>
+            </v-toolbar>
+
+            <v-container>
+                <v-layout>
+                    <v-flex pa-3 mb-2 xs4 align-space-between>
+                        <v-card class="v-card-margin">
+                            <v-img src="maksim.jpg" aspect-ratio="1"></v-img>
+
+                            <v-card-title primary-title>
+                                <div>
+                                    <h3 class="headline mb-0">Подбуртный Максим</h3>
+                                    <div> Backend - Разработка </div>
+                                </div>
+                            </v-card-title>
+
+                            <v-card-actions>
+                            </v-card-actions>
+                        </v-card>
+                        <!-- -----------------   -->
+                        <v-card class="v-card-margin">
+                            <v-img src="liza.jpg" aspect-ratio="1"></v-img>
+
+                            <v-card-title primary-title>
+                                <div>
+                                    <h3 class="headline mb-0">Гольцман Елизавета</h3>
+                                    <div>Web - дизайн</div>
+                                </div>
+                            </v-card-title>
+
+                            <v-card-actions>
+                            </v-card-actions>
+                        </v-card>
+                    </v-flex>
+                    <v-flex pa-3 mb-2 xs4>
+                        <v-card class="v-card-margin">
+                            <v-img src="andrew.jpg" aspect-ratio="1"></v-img>
+
+                            <v-card-title primary-title>
+                                <div>
+                                    <h3 class="headline mb-0">Мурзин Андрей</h3>
+                                    <div>Frontend - Разработка</div>
+                                </div>
+                            </v-card-title>
+
+                            <v-card-actions>
+                            </v-card-actions>
+                        </v-card>
+                        
+                        <v-card class="v-card-margin">
+                            <v-img src="artem.jpg" aspect-ratio="1"></v-img>
+
+                            <v-card-title primary-title>
+                                <div>
+                                    <h3 class="headline mb-0">Брашовян Артем</h3>
+                                    <div>Backend - Разработка</div>
+                                </div>
+                            </v-card-title>
+
+                            <v-card-actions>
+                            </v-card-actions>
+                        </v-card>
+                    </v-flex>
+                    <v-flex pa-3 mb-2 xs4>
+                        <v-card class="v-card-margin">
+                            <v-img src="aigul.jpg" aspect-ratio="1"></v-img>
+
+                            <v-card-title primary-title>
+                                <div>
+                                    <h3 class="headline mb-0">Кулиева Айгуль</h3>
+                                    <div> Графический дизайн </div>
+                                </div>
+                            </v-card-title>
+
+                            <v-card-actions>
+                            </v-card-actions>
+                        </v-card>
+                        <v-card class="v-card-margin">
+                            <v-img src="asli.jpg" aspect-ratio="1"></v-img>
+
+                            <v-card-title primary-title>
+                                <div>
+                                    <h3 class="headline mb-0">Сайдалиев Аслиддин</h3>
+                                    <div>Frontend - Разработка</div>
+                                </div>
+                            </v-card-title>
+
+                            <v-card-actions>
+                            </v-card-actions>
+                        </v-card>
+                    </v-flex>
+                </v-layout>
+            </v-container>
+
+            <v-footer color="#02315E" dark height="auto">
+                <v-card class="flex" flat tile>
+                    <v-card-actions class="grey darken-3 justify-center">
+                        &copy;2022 — <strong>AndrewPear Industry</strong>
+                    </v-card-actions>
+                </v-card>
+            </v-footer>
+        </v-app>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@1.x/dist/vuetify.js"></script>
+    <script>
+        new Vue({
+            el: '#app'
+        })
+    </script>
+</body>
+
+</html>

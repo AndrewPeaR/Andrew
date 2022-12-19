@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- VUE -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet">
+    <!-- Vuetify -->
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@1.x/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <style type="text/css">
+        .header {
+            margin-bottom: 50px;
+        }
+
+        .white-color {
+            color: "#02315E";
+        }
+
+        .layout {
+            height: 100%;
+        }
+
+        body {
+            background-color: #E3F2FD;
+        }
+        .v-card-margin {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <v-app>
+            <v-toolbar color="primary">
+                <v-toolbar-title class="white--text">AndrewPear Ind.</v-toolbar-title>
+                <v-spacer></v-spacer>
+                <v-toolbar-items class="hidden-sm-and-down">
+                    <v-btn flat class="white--text" href="#">Главная</v-btn>
+                    <v-btn flat class="white--text" href="#">Услуги</v-btn>
+                    <v-btn flat class="white--text" href="#">Отзывы</v-btn>
+                    <v-btn flat class="white--text" href="#">Оставить заявку</v-btn> <!-- Модальное окно -->
+                </v-toolbar-items>
+            </v-toolbar>
+
+            <v-container grid-list-md text-xs-center>
+                <v-layout pa-3 mb-2 class="layout">
+                    <v-flex xs12 justify-start>
+                        <v-card class="mx-auto v-card-margin" color="#90CAF9" dark>
+                            <v-card-title>
+                                <span class="title font-weight-light">Югорский Государственный университет</span>
+                            </v-card-title>
+
+                            <v-card-text class="headline font-weight-bold">
+                                "Очень радовало качество выполнения работы. Буду рекомендовать всем своим знакомым, очень быстро все сделали, я в восторге!"
+                            </v-card-text>
+
+                            <v-card-actions>
+                                <v-list-tile class="grow">
+                                    <v-list-tile-avatar color="grey darken-3">
+                                        <v-img class="elevation-6"
+                                            src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light">
+                                        </v-img>
+                                    </v-list-tile-avatar>
+
+                                    <v-list-tile-content>
+                                        <v-list-tile-title>Быстрова Марина</v-list-tile-title>
+                                    </v-list-tile-content>
+
+                                    <v-layout align-center justify-end>
+                                        <span class="subheading mr-2">12.12.2020</span>
+                                    </v-layout>
+                                </v-list-tile>
+                            </v-card-actions>
+                        </v-card>
+                        <v-card class="mx-auto v-card-margin" color="#90CAF9" dark>
+                            <v-card-title>
+                                <span class="title font-weight-light">ООО "ИП Перспектива"</span>
+                            </v-card-title>
+
+                            <v-card-text class="headline font-weight-bold">
+                                "Моему бизнесу давно не хватало сайта. Благодаря этой команде, я смог увеличить охват клиентов и повысить прибыль. Рекомендую."
+                            </v-card-text>
+
+                            <v-card-actions>
+                                <v-list-tile class="grow">
+                                    <v-list-tile-avatar color="grey darken-3">
+                                        <v-img class="elevation-6"
+                                            src="https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairSides&accessoriesType=Prescription01&hairColor=Red&facialHairType=Blank&clotheType=BlazerShirt&eyeType=EyeRoll&eyebrowType=FlatNatural&mouthType=Sad&skinColor=Brown'">
+                                        </v-img>
+                                    </v-list-tile-avatar>
+
+                                    <v-list-tile-content>
+                                        <v-list-tile-title>Пупкин Василий</v-list-tile-title>
+                                    </v-list-tile-content>
+
+                                    <v-layout align-center justify-end>
+                                        <span class="subheading mr-2">12.12.2020</span>
+                                    </v-layout>
+                                </v-list-tile>
+                            </v-card-actions>
+                        </v-card>
+                        <v-card class="mx-auto v-card-margin" color="#90CAF9" dark>
+                            <v-card-title>
+                                <span class="title font-weight-light">МБОУ "Гимназия №1"</span>
+                            </v-card-title>
+
+                            <v-card-text class="headline font-weight-bold">
+                                "Отличная работа. Ребята подходят к заданию со всей душой. Обновили наш школьный сайт, к делу подошли с умом."
+                            </v-card-text>
+
+                            <v-card-actions>
+                                <v-list-tile class="grow">
+                                    <v-list-tile-avatar color="grey darken-3">
+                                        <v-img class="elevation-6"
+                                            src="https://avataaars.io/?avatarStyle=Transparent&topType=LongHairFroBand&accessoriesType=Sunglasses&hairColor=Black&facialHairType=Blank&facialHairColor=Brown&clotheType=Hoodie&clotheColor=Red&eyeType=Surprised&eyebrowType=FlatNatural&mouthType=Concerned&skinColor=Pale'">
+                                        </v-img>
+                                    </v-list-tile-avatar>
+
+                                    <v-list-tile-content>
+                                        <v-list-tile-title>Иващенко Ольга</v-list-tile-title>
+                                    </v-list-tile-content>
+
+                                    <v-layout align-center justify-end>
+                                        <span class="subheading mr-2">12.12.2020</span>
+                                    </v-layout>
+                                </v-list-tile>
+                            </v-card-actions>
+                        </v-card>
+                    </v-flex>
+                </v-layout>
+            </v-container>
+
+            <v-footer color="#02315E" dark height="auto">
+                <v-card class="flex" flat tile>
+                    <v-card-actions class="grey darken-3 justify-center">
+                        &copy;2022 — <strong>AndrewPear Industry</strong>
+                    </v-card-actions>
+                </v-card>
+            </v-footer>
+        </v-app>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@1.x/dist/vuetify.js"></script>
+    <script>
+        new Vue({
+            el: '#app'
+        })
+    </script>
+</body>
+
+</html>
